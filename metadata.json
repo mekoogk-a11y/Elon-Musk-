@@ -1,0 +1,6 @@
+{
+  "name": "MUSKERA - The Engineering of Tomorrow",
+  "description": "Interactive global research encyclopedia and technology map documenting the engineering, companies, timeline, and philosophy of Elon Musk.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

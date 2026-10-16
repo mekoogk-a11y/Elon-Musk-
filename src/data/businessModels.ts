@@ -1,0 +1,117 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { BusinessModel } from '../types';
+
+export const BUSINESS_MODELS_DATA: BusinessModel[] = [
+  {
+    companyId: 'spacex',
+    companyName: 'SpaceX',
+    productEn: 'Orbital payload launch services (Falcon 9 / Falcon Heavy / Starship), government astronaut transportation (Crew Dragon), and space station cargo resupply.',
+    productAr: 'خدمات إطلاق الحمولات للمدار (فالكون 9 وفالكون هيفي وستارشيب)، ونقل رواد الفضاء الحكوميين (كرو دراغون)، وشحن البضائع لمحطة الفضاء الدولية.',
+    customerEn: 'Commercial satellite operators (SES, Eutelsat, Intelsat), NASA, U.S. Space Force (National Security Space Launch), and private orbital customers.',
+    customerAr: 'مشغلو الأقمار الصناعية التجارية، وكالة ناسا، قوة الفضاء الأمريكية (إطلاقات الأمن القومي)، والمؤسسات البحثية والمدنية.',
+    revenueEn: 'Long-term mission-based government contracts (NASA CRS & CCtCap, NSSL Phase 2/3 awards) and commercial launch service fees (~$67M–$97M per Falcon 9 launch).',
+    revenueAr: 'عقود حكومية طويلة الأجل مع ناسا والبنتاغون، ورسوم إطلاق تجارية للشركات (حوالي 67-97 مليون دولار للإطلاق المداري لفالكون 9).',
+    technologyEn: 'Reusable orbital boosters, Merlin 1D and Raptor 3 methane staged combustion rocket engines, autonomous recovery drone ships, and PICA-X heatshields.',
+    technologyAr: 'صواريخ قابلة لإعادة الاستخدام، ومحركات ميرلين ورابتور 3، ومنصات الهبوط البحرية المستقلة، والدروع الحرارية المتقدمة.',
+    infrastructureEn: 'Starbase rocket manufacturing complex (Boca Chica, TX), Hawthorne engine production plant, Cape Canaveral Space Force Station (SLC-40), Kennedy Space Center (LC-39A), Vandenberg Space Force Base (SLC-4E).',
+    infrastructureAr: 'مجمع تصنيع صواريخ ستاربيس في بوكا تشيكا بتكساس، ومصنع هوثورن في كاليفورنيا، ومنصات الإطلاق في كيب كانافيرال وفاندنبرغ.',
+    risksEn: 'Regulatory licensing delays (FAA Environmental Assessments), launch vehicle catastrophic anomalies, geopolitical competition, and heavy capital intensity for Starship.',
+    risksAr: 'التأخيرات التنظيمية لتراخيص الطيران، والمخاطر الهندسية لإخفاقات الإطلاق، والتكاليف الرأسمالية الضخمة لتطوير ستارشيب.',
+    competitionEn: 'United Launch Alliance (Vulcan Centaur), Blue Origin (New Glenn), Rocket Lab (Neutron), Arianespace (Ariane 6), and Chinese commercial launch providers.',
+    competitionAr: 'تحالف الإطلاق المتحد (فولكان)، وبلو أوريجين (نيو غلين)، وروكت لاب (نيوترون)، وأريان سبيس (أريان 6).'
+  },
+  {
+    companyId: 'starlink',
+    companyName: 'Starlink (SpaceX Division)',
+    productEn: 'Low-latency, high-speed broadband satellite internet and Direct-to-Cell cellular communication.',
+    productAr: 'خدمات إنترنت النطاق العريض عالي السرعة منخفض الكمون عبر الأقمار الصناعية، والاتصال الفضائي المباشر بالهواتف.',
+    customerEn: 'Residential consumers in rural/remote areas, maritime vessels, commercial airlines, enterprise remote sites, disaster response agencies, and military (Starshield).',
+    customerAr: 'المستهلكون في المناطق الريفية والنائية، والسفن البحرية، وشركات الطيران التجاري، والمؤسسات والجهات العسكرية (ستارشيلد).',
+    revenueEn: 'Recurring monthly hardware subscription fees ($50–$5,000/month depending on consumer, mobility, or aviation tier) plus flat user terminal hardware sales.',
+    revenueAr: 'اشتراكات شهرية متكررة (تتراوح بين 50 إلى 5000 دولار شهرياً حسب باقة الأفراد أو السفن أو الطائرات) بالإضافة لمبيعات أجهزة الاستقبال.',
+    technologyEn: 'Low Earth Orbit (LEO) phased array beamforming flat antennas, space lasers for inter-satellite optical mesh routing, and automated collision avoidance algorithms.',
+    technologyAr: 'أقمار مدارية منخفضة مزودة بمصفوفات طورية، وروابط ليزرية فضائية للتوجيه البيني بدون محطات أرضية وسيطة، ومناورة آلية لتفادي الحطام.',
+    infrastructureEn: 'Global gateway teleports with high-speed fiber interconnects, dedicated satellite automated manufacturing lines in Redmond, WA, and internal launch cadence.',
+    infrastructureAr: 'محطات اتصال أرضية عالمية مرتبطة بكابلات الألياف الضوئية، ومصانع أقمار صناعية آلية في ريدموند، ودورات إطلاق صاروخية أسبوعية.',
+    risksEn: 'Spectrum regulatory allocations (ITU/FCC), orbital debris congestion challenges, terrestrial fiber competition in urban centers, and geopolitical jamming.',
+    risksAr: 'تنظيم الترددات اللاسلكية الدولية، وتحديات ازدحام المدار الفضائي بالحطام، والتشويش الجيوسياسي في مناطق النزاعات.',
+    competitionEn: 'Amazon Project Kuiper, Eutelsat OneWeb, Telesat Lightspeed, legacy geostationary providers (Viasat, HughesNet).',
+    competitionAr: 'مشروع أمازون كويبر، ووان ويب، ومزودو الأقمار الثابتة التقليدية (فيا سات وهيوز نت).'
+  },
+  {
+    companyId: 'tesla',
+    companyName: 'Tesla Inc.',
+    productEn: 'All-electric premium and mass-market consumer vehicles, commercial semi-trucks, stationary battery storage systems (Megapack/Powerwall), solar roofs, and Full Self-Driving software subscriptions.',
+    productAr: 'سيارات كهربائية متطورة وواسعة الانتشار، وشاحنات ثقيلة (سيمي)، وأنظمة تخزين الطاقة للشبكات والمنازل (ميغاباك وباور وول)، وبرمجيات القيادة الذاتية FSD.',
+    customerEn: 'Global individual automobile consumers, corporate logistics fleets, national utility grid operators, and renewable power developers.',
+    customerAr: 'الأفراد في مختلف دول العالم، وشركات الشحن والنقل اللوجستي، ومشغلو شبكات الكهرباء ومطورو مزارع الطاقة المتجددة.',
+    revenueEn: 'Direct-to-consumer vehicle sales and leasing, regulatory emissions credits, upfront and subscription software revenue (FSD), Supercharging fees, and energy deployment contracts.',
+    revenueAr: 'مبيعات وتأجير السيارات بدون وكلاء وسيطين، وأرصدة الانبعاثات الكربونية، واشتراكات برمجيات FSD، ورسوم شبكة الشحن الفائق، ومشاريع تخزين الطاقة الكبرى.',
+    technologyEn: 'Vision-only neural network perception, custom HW4 FSD computers, structural 4680 cell architectures, front/rear high-pressure mega-castings, and heat pump thermal loops.',
+    technologyAr: 'معالجة الرؤية الحاسوبية بالشبكات العصبية، ورقاقات FSD المخصصة، وخلايا بطاريات 4680 الهيكلية، ومكابس الصب العملاقة، ومضخات الحرارة المتطورة.',
+    infrastructureEn: 'Six global vehicle and battery Gigafactories (Fremont, Shanghai, Berlin-Brandenburg, Austin Texas, Nevada, and Lathrop Megafactory), 60,000+ Supercharger stalls globally.',
+    infrastructureAr: 'ستة مصانع عملاقة للسيارات والبطاريات في أمريكا والصين وألمانيا، وشبكة شحن فائق تضم أكثر من 60,000 محطة حول العالم.',
+    risksEn: 'Global macroeconomic vehicle demand cycles, raw material price fluctuations (lithium, nickel), rising competition from legacy and Chinese EV automakers, and regulatory approval for unsupervised autonomy.',
+    risksAr: 'تقلبات الطلب الاستهلاكي، وتذبذب أسعار معادن البطاريات، والمنافسة الشديدة من الشركات الصينية وصناع السيارات التقليديين، وتعقيدات تراخيص القيادة الذاتية الكاملة.',
+    competitionEn: 'BYD, General Motors, Ford, Hyundai-Kia, Volkswagen Group, BMW, and specialized energy storage manufacturers (CATL, Fluence).',
+    competitionAr: 'بي واي دي (BYD)، وفولكسفاغن، وفورد، وهيونداي-كيا، وشركات البطاريات الصناعية (CATL).'
+  },
+  {
+    companyId: 'xai',
+    companyName: 'xAI',
+    productEn: 'Grok multimodal reasoning AI models, enterprise scientific discovery APIs, and integrated real-time information processing.',
+    productAr: 'نماذج غروك للذكاء الاصطناعي والاستدلال متعدد الوسائط، وواجهات برمجة التطبيقات للأبحاث العلمية، والتحليل اللحظي للمعلومات.',
+    customerEn: 'X platform Premium subscribers, enterprise enterprise software developers, scientific researchers, and corporate API consumers.',
+    customerAr: 'مشتركو منصة X المميزون، ومطورو البرمجيات، والباحثون في المؤسسات العلمية والجامعية.',
+    revenueEn: 'Premium user subscription revenue shares, commercial developer API compute tokens, and enterprise inference contracts.',
+    revenueAr: 'حصة من اشتراكات المستخدمين المميزة، ورسوم استهلاك رموز API للمطورين والشركات.',
+    technologyEn: 'Deep multimodal autoregressive neural architectures, real-time citation synthesis, and extreme-density liquid-cooled supercluster orchestration (Memphis Colossus).',
+    technologyAr: 'معماريات الشبكات العصبية ذاتية التراجع متعددة الوسائط، والتحقق المباشر من المصادر، وإدارة الحوسبة الفائقة المبردة بالسوائل.',
+    infrastructureEn: 'Memphis Colossus data center facility with 100,000+ dedicated NVIDIA GPUs, proprietary high-bandwidth RDMA networks, and megawatt electrical feeds.',
+    infrastructureAr: 'مجمع بيانات كولوسوس في ممفيس بأكثر من 100,000 معالج إنفيديا فائق وشبكات نقل بيانات فائقة السرعة.',
+    risksEn: 'Massive capital expenditure for cutting-edge AI hardware, rapid competitive advancements in foundational models, and power availability limits.',
+    risksAr: 'الإنفاق الرأسمالي الضخم لشراء رقاقات الذكاء الاصطناعي، وتسارع وتيرة المنافسة مع كبرى شركات التقنية، وتحديات توفير الطاقة الكهربائية.',
+    competitionEn: 'OpenAI (GPT series), Google (Gemini), Anthropic (Claude), Meta (Llama).',
+    competitionAr: 'أوبن إيه آي (شات جي بي تي)، وجوجل (جيميني)، وأنثروبيك (كلود)، وميتا (لاما).'
+  },
+  {
+    companyId: 'neuralink',
+    companyName: 'Neuralink',
+    productEn: 'Implantable Brain-Computer Interface (N1 BCI), automated microsurgical robot (R1), and real-time neural decoding software.',
+    productAr: 'واجهة دماغية حاسوبية قابلة للزرع (N1)، وروبوت جراحي مجهري آلي (R1)، وبرمجيات فك التشفير العصبي الفوري.',
+    customerEn: 'Individuals suffering from quadriplegia, ALS, spinal cord injuries; future vision: expanded clinical treatments for blindness and neurological disorders.',
+    customerAr: 'المصابون بالشلل الرباعي، ومرضى التصلب الجانبي الضموري (ALS)، وإصابات الحبل الشوكي؛ ومستقبلاً فاقدو البصر والمصابون باعتلالات عصبية.',
+    revenueEn: 'Not publicly disclosed. Currently structured as a venture-funded clinical research and development medical technology company.',
+    revenueAr: 'غير معلن للعامة (Not publicly disclosed). تعمل حالياً كشركة أبحاث وتطوير طبي مدعومة بالتمويل الاستثماري وتجارب سريرية غير ربحية بعد.',
+    technologyEn: 'Sub-cranial low-power ASIC with 1,024 amplification channels, biocompatible polyimide threads, computer-vision guided microsurgical needle inserter.',
+    technologyAr: 'رقاقة مخصصة منخفضة الطاقة بـ 1024 قناة استقبال، وخيوط بوليمر دقيقة متوافقة مع الأنسجة الحية، وروبوت جراحي موجه بالرؤية الحاسوبية.',
+    infrastructureEn: 'Cleanroom nanofabrication medical facilities in Fremont, CA, and headquarters laboratories in Austin, TX.',
+    infrastructureAr: 'مرافق تصنيع النانو الطبية في غرف معقمة في فريمونت بكاليفورنيا والمقر البحثي في أوستن بتكساس.',
+    risksEn: 'Strict FDA investigational regulatory requirements, surgical infection or tissue inflammatory reactions, long-term biological signal durability, and public ethical scrutiny.',
+    risksAr: 'المتطلبات التنظيمية الصارمة لإدارة الغذاء والدواء (FDA)، والمخاطر الجراحية كالالتهابات أو تآكل الإشارات بمرور السنوات، والجدل الأخلاقي الطبي.',
+    competitionEn: 'Synchron (Stentrode endovascular BCI), Blackrock Neurotech, Precision Neuroscience, Paradromics.',
+    competitionAr: 'سينكرون (Synchron)، وبلاك روك نيوروتك، وبريسيجن نيوروساينس، وبارادروميكس.'
+  },
+  {
+    companyId: 'boring',
+    companyName: 'The Boring Company',
+    productEn: 'Subterranean electrified express transportation loops (Vegas Loop) and customized automated continuous-tunneling machines (Prufrock).',
+    productAr: 'شبكات أنفاق النقل السريع الكهربائية (فيغاس لوب)، وحفارات الأنفاق الآلية المستمرة (بروفروك).',
+    customerEn: 'Municipal transit authorities, convention center operators, airport districts, and private property developers.',
+    customerAr: 'إدارات النقل في المدن، ومراكز المؤتمرات، وإدارات المطارات الدولية، ومطورو العقارات الكبرى.',
+    revenueEn: 'Fixed-price civil infrastructure tunneling contracts, private station connection fees, and passenger per-ride ticket fares.',
+    revenueAr: 'عقود حفر البنية التحتية، ورسوم ربط المحطات الخاصة بالشبكة، وتذاكر نقل الركاب لكل رحلة.',
+    technologyEn: 'Continuous-mining all-electric tunnel boring machines (Prufrock), automated concrete segment placement, and autonomous electric vehicle fleet dispatching.',
+    technologyAr: 'حفارات أنفاق كهربائية متواصلة الحفر ذاتية التقدم، وتركيب الحلقات الخرسانية آلياً، وبرمجيات إدارة أساطيل المركبات داخل الأنفاق.',
+    infrastructureEn: 'Heavy machinery fabrication workshops in Bastrop, TX, and operating loop networks in Clark County/Las Vegas, NV.',
+    infrastructureAr: 'ورش تصنيع الآلات الثقيلة في باستروب بتكساس، وشبكة أنفاق فيغاس قيد التشغيل والتوسع في نيفادا.',
+    risksEn: 'Local municipal permitting delays, geotechnical anomalies (underground water tables, hard rock strata), and transit union opposition.',
+    risksAr: 'التأخيرات في استخراج تصاريح البلديات المحلية، والمفاجآت الجيولوجية تحت الأرض (المياه الجوفية والصخور الصلبة)، ومقاومة أساليب النقل التقليدية.',
+    competitionEn: 'Traditional civil engineering tunneling contractors (Herrenknecht, Robbins, Skanska, Bechtel).',
+    competitionAr: 'شركات حفر الأنفاق والهندسة المدنية العالمية التقليدية (هيرنكنيشت، روبنز، بكتل).'
+  }
+];

@@ -1,0 +1,94 @@
+{
+  "entities": {
+    "Company": {
+      "title": "Company",
+      "description": "Entity representing a company founded, co-founded, or led by Elon Musk",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "tagline": { "type": "string" },
+        "foundedYear": { "type": "number" },
+        "role": { "type": "string" },
+        "status": { "type": "string" },
+        "category": { "type": "string" },
+        "descriptionEn": { "type": "string" },
+        "descriptionAr": { "type": "string" },
+        "coreTechnologies": { "type": "array" },
+        "sources": { "type": "array" }
+      },
+      "required": ["id", "name", "foundedYear", "role", "category"]
+    },
+    "TimelineEvent": {
+      "title": "TimelineEvent",
+      "description": "Chronological milestone in the life, companies, and engineering ventures of Elon Musk",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "year": { "type": "number" },
+        "date": { "type": "string" },
+        "titleEn": { "type": "string" },
+        "titleAr": { "type": "string" },
+        "companyId": { "type": "string" },
+        "summaryEn": { "type": "string" },
+        "summaryAr": { "type": "string" },
+        "technology": { "type": "string" },
+        "significance": { "type": "string" },
+        "sources": { "type": "array" }
+      },
+      "required": ["id", "year", "titleEn", "titleAr", "summaryEn", "summaryAr"]
+    },
+    "NewsItem": {
+      "title": "NewsItem",
+      "description": "Documented verified news update from official sources",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "date": { "type": "string" },
+        "titleEn": { "type": "string" },
+        "titleAr": { "type": "string" },
+        "summaryEn": { "type": "string" },
+        "summaryAr": { "type": "string" },
+        "company": { "type": "string" },
+        "source": { "type": "string" },
+        "sourceUrl": { "type": "string" }
+      },
+      "required": ["id", "date", "titleEn", "titleAr", "company", "source"]
+    },
+    "ResearchArticle": {
+      "title": "ResearchArticle",
+      "description": "In-depth analytical article in the MUSKERA research library",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "titleEn": { "type": "string" },
+        "titleAr": { "type": "string" },
+        "category": { "type": "string" },
+        "readTime": { "type": "string" },
+        "contentEn": { "type": "string" },
+        "contentAr": { "type": "string" },
+        "tags": { "type": "array" },
+        "sources": { "type": "array" }
+      },
+      "required": ["id", "titleEn", "titleAr", "category"]
+    }
+  },
+  "firestore": {
+    "/companies/{companyId}": {
+      "schema": "Company",
+      "description": "Collection of all documented companies in the ecosystem"
+    },
+    "/timeline/{eventId}": {
+      "schema": "TimelineEvent",
+      "description": "Chronological archive of milestones from 1971 to 2026"
+    },
+    "/news/{newsId}": {
+      "schema": "NewsItem",
+      "description": "Verified news updates and official announcements"
+    },
+    "/research/{articleId}": {
+      "schema": "ResearchArticle",
+      "description": "Documented engineering analyses and deep-dive papers"
+    }
+  }
+}
